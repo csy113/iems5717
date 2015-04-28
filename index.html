@@ -80,31 +80,29 @@
                         <hr class="intro-divider">
 												<h3>Members</h3>
                         <ul class="list-inline ">
-                            <li>
-                                <a href="mailto:s1003708821@mailserv.cuhk.edu.hk"
-																class="btn btn-default btn-lg"><i
-																class="fa"></i> <span
-																class="network-name">1003708821</span></a>
-                            </li>
-                            <li>
-                                <a href="mailto:s1155000372@mailserv.cuhk.edu.hk"
-																class="btn btn-default btn-lg"><i
-																class="fa"></i> <span
-																class="network-name">1155000372</span></a>
-                            </li>
-                            <li>
-                                <a href="mailto:s1155039481@mailserv.cuhk.edu.hk"
-																class="btn btn-default btn-lg"><i
-																class="fa"></i> <span
-																class="network-name">1155039481</span></a>
-                            </li>
-                            <li>
-                                <a href="mailto:s1155054906@mailserv.cuhk.edu.hk"
-																class="btn btn-default btn-lg"><i
-																class="fa"></i> <span
-																class="network-name">1155054906</span></a>
-                            </li>
+                            <li> 1003708821 </li>
+                            <li> 1155000372 </li>
+                            <li> 1155039481 </li>
+                            <li> 1155054906 </li>
                         </ul>
+                        <hr class="intro-divider">
+												<h3>Presentation files</h3>
+                        <ul class="list-inline ">
+                            <li>
+                                <a href="downloads/IEMS5717 SDWN DEMO.pptx"
+																class="btn btn-default btn-lg"
+																target="_blank"><i
+																class="fa"></i> <span
+																class="network-name">PPTX</span></a>
+                            </li>
+                            <li>
+                                <a href="downloads/IEMS5717 SDWN DEMO.pdf"
+																class="btn btn-default btn-lg"
+																target="_blank"><i
+																class="fa"></i> <span
+																class="network-name">PDF</span></a>
+                            </li>
+												
                     </div>
                 </div>
             </div>
@@ -146,6 +144,7 @@
     </div>
     <!-- /.content-section-a -->
 
+	<a  name="anyfi"></a>
     <div class="content-section-b">
 
         <div class="container">
@@ -154,14 +153,43 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Advantages of SWDN</h2>
-                    <p class="lead">SDWN can simplify the
-										configuration of networking devices. It enables
-										easy network management and centrolized control of
-										multi-vendor environments. </p>
+                    <h2 class="section-heading">Anyfi</h2>
+                    <p class="lead"> Anyfi is a SDN solution for
+										wireless network.  It separates the data plane and
+										the control plane, as well as separates the radio
+										from the services.<br>
+										The Anyfi architecture is composed of three parts:
+										Radios, Services and Controller.<br>
+										<ul>
+											<li>
+											<h3>Radio</h3>
+												A Radio has two main responsibilities:
+												constantly monitoring the radio environment to
+												detect when a mobile device comes within range
+												and, when so instructed by the Controller,
+												allocating Virtual BSSes for its preferred
+												networks.
+											</li>
+											<li>
+											<h3>Service</h3>
+												The Service implements all the higher level
+												functions of the IEEE 802.11 stack including
+												authentication and encryption. All processing
+												on Layer 3 and above takes place here.
+											</li>
+											<li>
+											<h3>Controller</h3>
+												The Controller coordinates Radios and
+												Services, connecting them to form complete
+												IEEE 802.11 stacks on demand. It communicates
+												with other network elements through a
+												lightweight UDP/IP based control plane
+												protocol in many ways similar to DNS.
+											</li>
+										</ul>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/dog.png" alt="">
+                    <img class="img-responsive" src="img/architecture_full.png" alt="">
                 </div>
             </div>
 
@@ -171,7 +199,6 @@
     </div>
     <!-- /.content-section-b -->
 
-	<a  name="anyfi"></a>
     <div class="content-section-a">
 
         <div class="container">
@@ -180,14 +207,56 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Anyfi</h2>
-                    <p class="lead">Anyfi is one of the SDWN
-										solutions. Its aim is to redefine and separate the
-										radio from service. In simple words:</br>
-										<h3>AnyFi = Radios + Services + Controller</h3></p>
+                    <h2 class="section-heading">Advantages of Anyfi</h2>
+                    <p class="lead">
+										<ul>
+											<li>
+											<h3>Flexibility</h3>
+												Anyfi decouples the radios and the services.
+												Each components can be chosen independently
+												provided that they are compatible with the
+												Anyfi software. <br>
+												Moreover, the centralized controller enables
+												very flexible management of the services and
+												the radios.
+											</li>
+											<li>
+											<h3>Low cost</h3>
+												The Anyfi gateway often has another primary
+												function, such as serving as the residential
+												gateway for a fixed-line broadband subscriber.
+												Anyfi prioritizes the traffic such that the
+												primary function affected minimally. <br>
+												No additional bandwidth, software and hardware
+												is needed.
+											</li>
+											<li>
+											<h3>Security</h3>
+												Security is important in all Wifi networks.
+												To ensure the security, Anyfi implemented the
+												following measures:
+												<ol>
+													<li> Strong mutual authentication </li>
+														In order to prevent man-in-the-middle
+														attack, not only should the devices be
+														authenticated  to the network, the network
+														should be authenticated to the devices,
+														too. <br>
+														The whole channel of Anyfi is protected by
+														WPA/WPA2, which ensures strong mutual
+														authentication.
+													<li> End-to-end encryption </li>
+														The data is encrypted all the way from the
+														devices to the gateway in the trustd zone.
+												</ol>
+											</li>
+										</ul>
+										</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/radiohead.png" alt="">
+                    <img class="img-responsive" src="img/desktopsupport.jpg" alt="">
+										<hr class="intro-divider">
+                    <img class="img-responsive" src="img/trusted_large.png" alt="">
                 </div>
             </div>
 
@@ -208,8 +277,12 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Anyfi use case - <br>Home Wifi
 										Anywhere</h2>
-                    <p class="lead">When you visit a friend with an
-										Anyfi.net enabled home gateway. </p>
+                    <p class="lead">
+										The first use case is a zero sign-on solution that
+										allows the devices to connect to the home Wifi
+										anywhere.<br>
+
+										 </p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/anyfihotspot.png" alt="">
@@ -219,6 +292,30 @@
         </div>
         <!-- /.container -->
 
+<!--
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"> Anyfi use case - Homepot </h2>
+                    <p class="lead">
+										</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/SDN.png" alt="">
+                </div>
+            </div>
+
+        </div>
+				-->
+        <!-- /.container -->
+
+
+    </div>
+    <!-- /.content-section-a -->
     </div>
     <!-- /.content-section-b -->
 	<a  name="contact"></a>
