@@ -114,6 +114,32 @@
     <!-- /.intro-header -->
 
     <!-- Page Content -->
+	<a  name="introduction"></a>
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"> Introduction<br></h2>
+	
+                    <p class="lead">
+			In this project, we are going to introduce Software Defined Wireless Network (SDWN).
+			We have made a prototype of SDWN by using Anyfi in order to give a brief idea.<br>					       </p>
+
+										                 </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/software-defined-networking_sdn.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+
+
 
 	<a name="sdwn"></a>
     <div class="content-section-a">
@@ -325,10 +351,37 @@
 		   </p>
 	          <h3>Setup of Prototype</h3>
 		   <p class="lead">
-			The second use case is migrating hotspots and homespots to a unified SDWN platform. People can access their hotspot anywhere. <br><br>
-			With Anyfi technology, each device sees only the networks that are relevant to them.
-			Also, the fixed-line broadband subscriber is not impacted by the solution since both backhaul and radio resources are carefully managed. Fixed-line broadbacd subscriber is prioritied.
+			The picture on the right hand side shows the setup of our prototype.<br><br>
+			The mobile AP acts as internet gateway.<br><br>
+			Two mesh routers from backbone provide internet access to users.<br><br>
+			Three Anyfi components (Anyfi-OPT, Anyfi-GW, and Anyfi-CTRL) are interconnected with each others to provide the SDWN service.
+			<br><br>
+		
 		   </p>
+	          <h3>How to setup Anyfi network?</h3>
+		   <p class="lead">
+		     <ul>
+			<li>Install server packages</li>
+			<li>Compile firmware on embedded devices</li>
+			<li>Config all the SDWN servers</li>
+
+		     </ul>			<br><br>
+		
+		   </p>
+	          <h3>How to setup Wireless Mesh</h3>
+		   <p class="lead">
+		     Use Back-N technology powered by P2MT<br>
+		     (*should we add more details for this part???)		
+		   </p>
+		  <h3>How does our prototype work?</h3>
+		   <p class="lead">
+		     Two mesh routers will interconnected. 
+		     They access the internet via mobile AP.
+		     Once Wi-Fi client connects to router, mobile AP will communicate with Anyfi Controller (Anyfi-CTRL) to do the authentication automatically. (Given that the client was registered with Anyfi Controller before)<br>
+		    (It is not finished...dunno how it works after this step :( )		
+		   </p>
+
+
 
 										                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
