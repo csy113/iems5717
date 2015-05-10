@@ -421,17 +421,32 @@
                     <h2 class="section-heading">
 										How does our prototype work?</h2>
 		   <p class="lead">
-Two mesh routers will interconnected with wireless backbone (P2MT BackN technology). Mobile AP will provide internet access for the mesh network. 
+
+			<ol>
+				<li>Two mesh routers are interconnected by using wireless backbone technology (P2MT BackN technology)</li>
+				<li>Mesh network accesses Internet via Mobile AP</li>
+				<li>Client connects to mesh router</li>
+				<li>The mesh access router builds a PPTP tunnel to connect with Anyfi SDWN core</li>
+					<ul>
+						<li>Mobile AP connects to Anyfi controller(Anyfi-CTRL)</li>
+							<ul>
+								<li>Register the radio interface for the Anyfi service</li>
+							</ul>
+					</ul>
+				<li>Anyfi-GW pushs the services configuration to mesh access router via control plane</li>
+				<li>Mesh access router delivers 802.11 beacon for the configurated Anyfi service (Anyfi-OPT)</li>
+						
+									<li>Client connects to the service via the SSID</li>
+				<li>AAA is handled by Anyfi wlan-gw</li>
+				<li>After AAA process, client accesses to the Internet via the wlan-gw</li>
+				<li>Anyfi-MGMT provides management plane for the whole SDWN</li>
+					<ul>
+						<li>Administator accesse the client information by the “Splunk” Anyfi management apps</li>
+						<li>All services data is displayed in there</li>
+					</ul>
+			</ol>
 		     <br><br>
-The access mesh router will build a PPTP tunnel to connect with anyfi sdwn core (placed in the P2MT network). 
 <br><br>
-The access mesh router will connect to the anyfi controller(Anyfi-CTRL) and register the radio interface for the anyfi service. <br><br>
-The anyfi-gw will push the services configuration to the mesh access router by the control plane. 
-<br><br>
-The radio interface of the mesh access router will responsible for delivery the 802.11 beacon for the configurated anyfi service. <br><br>
-Client can connect to the service via the SSID. The AAA will be handle by the Anyfi wlan-gw. <br><br>
-After the AAA process the client can go to the internet via the wlan-gw.<br><br>
-The anyfi-mgmt can provide the management plane for the whole sdwn, administator can access the client informantion by the “Splunk” anyfi management apps. All the services data will be displayed here.<br><br>
 	
 		   </p>
 
